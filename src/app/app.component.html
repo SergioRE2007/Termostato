@@ -1,0 +1,13 @@
+<h1>Termostato</h1>
+
+<app-control-temperatura
+  [temperatura]="temperatura"
+  [umbral]="umbral"
+  (cambioTemperatura)="actualizarTemperatura($event)"
+  (cambioUmbral)="actualizarUmbral($event)">
+</app-control-temperatura>
+
+<app-display-temperatura
+  [temperatura]="temperatura"
+  [umbral]="umbral">
+</app-display-temperatura>

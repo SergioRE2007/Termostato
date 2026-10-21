@@ -1,0 +1,13 @@
+<div class="caja">
+  <h2>CONTROL DE TEMPERATURA</h2>
+  <button (click)="bajar()">-</button>
+  <span>{{ temperatura() }} ºC</span>
+  <button (click)="subir()">+</button>
+  <p>
+    Umbral:
+    <input
+      type="text"
+      [value]="umbral()"
+      (input)="cambiarUmbral($event)">
+  </p>
+</div>
